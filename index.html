@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filip Kiełbus | Portfolio</title>
+  <meta name="description" content="Portfolio Filipa Kiełbusa: programowanie, druk 3D i motoryzacja.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // ustawia motyw zanim strona się wyrenderuje (bez "mrugnięcia")
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Główna nawigacja">
+      <a href="#home" class="logo">FK<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#skills">Umiejętności</a></li>
+        <li><a href="#projects">Projekty</a></li>
+        <li><a href="#3d">Druk 3D</a></li>
+        <li><a href="#cars">Motoryzacja</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Przełącz motyw">🌙</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <p class="eyebrow">Cześć, jestem</p>
+      <h1>Filip <span class="gradient-text">Kiełbus</span></h1>
+      <p class="hero-sub">Programista, maker druku 3D i fan motoryzacji.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Zobacz projekty</a>
+        <a href="#contact" class="btn btn-ghost">Kontakt</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <h2 class="section-title">O mnie</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Uczę się w technikum programistycznym i tworzę strony, aplikacje oraz własne modele 3D.
+             Programowanie łączę z pasją do druku 3D i motoryzacji.</p>
+          <p>Mam własną drukarkę Bambu Lab A1 Combo, a modele projektuję w Fusion.
+             Swoje prace publikuję na MakerWorld.</p>
+        </div>
+        <div class="about-card">
+          <ul class="facts">
+            <li><strong>Szkoła:</strong> technikum programistyczne</li>
+            <li><strong>Pasje:</strong> kod, druk 3D, samochody</li>
+            <li><strong>Obecnie uczę się:</strong> C#, Android Studio, Bootstrap</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container reveal">
+      <h2 class="section-title">Umiejętności</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Web</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap*</span></div>
+        </article>
+        <article class="card">
+          <h3>Języki</h3>
+          <div class="tags"><span>Python</span><span>Java</span><span>C++</span><span>C#*</span></div>
+        </article>
+        <article class="card">
+          <h3>Mobile</h3>
+          <div class="tags"><span>Android Studio*</span></div>
+        </article>
+        <article class="card">
+          <h3>Design 3D</h3>
+          <div class="tags"><span>Fusion</span><span>Bambu Studio</span></div>
+        </article>
+      </div>
+      <p class="note">* w trakcie nauki</p>
+    </section>
+
+    <section id="projects" class="section container reveal">
+      <h2 class="section-title">Projekty</h2>
+      <div class="cards">
+        <article class="card project">
+          <h3>Projekt 1</h3>
+          <p>Krótki opis projektu.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span></div>
+          <a href="#" class="link">Zobacz →</a>
+        </article>
+        <article class="card project">
+          <h3>Projekt 2</h3>
+          <p>Krótki opis projektu.</p>
+          <div class="tags"><span>Python</span></div>
+          <a href="#" class="link">Zobacz →</a>
+        </article>
+        <article class="card project">
+          <h3>Projekt 3</h3>
+          <p>Krótki opis projektu.</p>
+          <div class="tags"><span>Java</span></div>
+          <a href="#" class="link">Zobacz →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ZIELONY akcent: druk 3D -->
+    <section id="3d" class="section container reveal accent-green">
+      <h2 class="section-title">Druk 3D</h2>
+      <p>Projektuję w Fusion i drukuję na własnej drukarce. Swoje modele publikuję na MakerWorld,
+         gdzie każdy może je pobrać.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Drukarka</h3>
+          <p>Bambu Lab A1 Combo, na której drukuję swoje projekty.</p>
+          <div class="tags"><span>Bambu Lab A1 Combo</span><span>Bambu Studio</span></div>
+        </article>
+        <article class="card">
+          <h3>Projektowanie</h3>
+          <p>Własne modele 3D tworzone od zera w programie Fusion.</p>
+          <div class="tags"><span>Fusion</span><span>Modelowanie 3D</span></div>
+        </article>
+        <article class="card">
+          <h3>MakerWorld</h3>
+          <p>Mój profil z modelami do pobrania.</p>
+          <a href="LINK_DO_MAKERWORLD" class="link" target="_blank" rel="noopener">Zobacz profil →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- NIEBIESKI akcent: motoryzacja -->
+    <section id="cars" class="section container reveal accent-blue">
+      <h2 class="section-title">Motoryzacja</h2>
+      <p>Samochody to moja druga wielka pasja, obok kodu i druku 3D.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Opel Astra H OPC</h3>
+          <p>Moje własne auto i powód do dumy. Tu dodamy zdjęcie i kilka słów o nim.</p>
+          <div class="tags"><span>Opel</span><span>Astra H</span><span>OPC</span></div>
+        </article>
+        <article class="card">
+          <h3>Prawo jazdy</h3>
+          <p>Mam prawo jazdy i na co dzień jeżdżę własnym samochodem.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container reveal">
+      <h2 class="section-title">Kontakt</h2>
+      <p>Masz pytanie lub pomysł? Napisz do mnie.</p>
+      <a href="mailto:kielbusf@gmail.com" class="btn btn-primary">kielbusf@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Filip Kiełbus</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
