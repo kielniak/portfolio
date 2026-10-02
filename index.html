@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>
+    document.documentElement.classList.add('js');
     // ustawia motyw zanim strona się wyrenderuje (bez "mrugnięcia")
     const saved = localStorage.getItem('theme');
     if (saved) document.documentElement.setAttribute('data-theme', saved);
@@ -131,7 +132,7 @@
         <article class="card">
           <h3>MakerWorld</h3>
           <p>Mój profil z modelami do pobrania.</p>
-          <a href="LINK_DO_MAKERWORLD" class="link" target="_blank" rel="noopener">Zobacz profil →</a>
+          <a href="https://makerworld.com/pl/@kielnia/upload" class="link" target="_blank" rel="noopener">Zobacz profil →</a>
         </article>
       </div>
     </section>
@@ -157,6 +158,7 @@
       <h2 class="section-title">Kontakt</h2>
       <p>Masz pytanie lub pomysł? Napisz do mnie.</p>
       <a href="mailto:kielbusf@gmail.com" class="btn btn-primary">kielbusf@gmail.com</a>
+      <a href="https://github.com/kielniak" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
     </section>
   </main>
 

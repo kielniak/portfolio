@@ -179,7 +179,7 @@ ul { list-style: none; }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.2rem; }
 
 /* ===== Sekcje ===== */
-.section { padding: 2.5rem 0 2rem 1rem ; scroll-margin-top: 70px; }
+.section { padding: 2.5rem 0 6rem 1rem ; scroll-margin-top: 70px; }
 
 .section-title {
   font-size: clamp(1.8rem, 5vw, 2.6rem);
