@@ -1,4 +1,3 @@
-/* ===== Zmienne i motywy ===== */
 :root,
 [data-theme="dark"] {
   --bg: #0b0d12;
@@ -7,7 +6,7 @@
   --border: rgba(255, 255, 255, 0.08);
   --text: #e8eaf0;
   --muted: #9aa3b5;
-  --accent: #1c57c4;      /* kolor domyślny strony */
+  --accent: #1c57c4;
   --accent-2: #2c61c5;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   --header-bg: rgba(11, 13, 18, 0.75);
@@ -24,7 +23,6 @@
   --header-bg: rgba(246, 247, 251, 0.8);
 }
 
-/* ===== Reset i baza ===== */
 *,
 *::before,
 *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -55,7 +53,6 @@ ul { list-style: none; }
   border-radius: 6px;
 }
 
-/* ===== Header i nawigacja ===== */
 .header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -104,7 +101,6 @@ ul { list-style: none; }
 .menu-toggle:hover { border-color: var(--accent); transform: translateY(-2px); }
 .menu-toggle { display: none; }
 
-/* ===== Przyciski ===== */
 .btn {
   display: inline-block;
   padding: 0.85rem 1.7rem;
@@ -124,7 +120,6 @@ ul { list-style: none; }
 .btn-ghost { border-color: var(--border); background: var(--surface); }
 .btn-ghost:hover { border-color: var(--accent); }
 
-/* ===== Hero ===== */
 .hero {
   min-height: 100vh;
   min-height: 100svh;
@@ -178,7 +173,6 @@ ul { list-style: none; }
 
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.2rem; }
 
-/* ===== Sekcje ===== */
 .section { padding: 2.5rem 0 6rem 1rem ; scroll-margin-top: 70px; }
 
 .section-title {
@@ -199,7 +193,6 @@ ul { list-style: none; }
 .section p { color: var(--muted); max-width: 65ch; margin-bottom: 1.2rem; }
 .note { font-size: 0.85rem; margin-top: 1.2rem; }
 
-/* ===== O mnie ===== */
 .about-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -217,7 +210,6 @@ ul { list-style: none; }
 .facts li + li { border-top: 1px solid var(--border); }
 .facts strong { color: var(--text); }
 
-/* ===== Karty ===== */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -254,7 +246,6 @@ ul { list-style: none; }
 .link { color: var(--accent); font-weight: 600; }
 .link:hover { text-decoration: underline; }
 
-/* ===== Stopka ===== */
 .footer {
   padding: 2rem 0 3rem;
   text-align: center;
@@ -263,7 +254,6 @@ ul { list-style: none; }
   border-top: 1px solid var(--border);
 }
 
-/* ===== Animacje przy scrollu (włączane przez JS) ===== */
 .js .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -271,7 +261,6 @@ ul { list-style: none; }
 }
 .js .reveal.visible { opacity: 1; transform: none; }
 
-/* ===== Akcenty per sekcja ===== */
 .accent-green {
   --accent: #22c55e;
   --accent-2: #14b8a6;
@@ -281,11 +270,9 @@ ul { list-style: none; }
   --accent-2: #06b6d4;
 }
 
-/* ciemniejsze odcienie w jasnym motywie, żeby tekst był czytelny */
 [data-theme="light"] .accent-green { --accent: #15803d; --accent-2: #0d9488; }
 [data-theme="light"] .accent-blue  { --accent: #1d4ed8; --accent-2: #0891b2; }
 
-/* sekcje z własnym akcentem dostają delikatną poświatę w tle */
 .accent-green,
 .accent-blue {
   position: relative;
@@ -302,7 +289,6 @@ ul { list-style: none; }
   pointer-events: none;
 }
 
-/* ===== Responsywność ===== */
 @media (max-width: 820px) {
   .about-grid { grid-template-columns: 1fr; }
   .section { padding: 4rem 0; }
@@ -326,7 +312,6 @@ ul { list-style: none; }
   .nav-links li + li { border-top: 1px solid var(--border); }
 }
 
-/* ===== Mniej ruchu, jeśli użytkownik tak woli ===== */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
